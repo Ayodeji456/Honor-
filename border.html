@@ -1,0 +1,63 @@
+>To center an image, you can use the following HTML and CSS code:
+
+HTML:
+
+```
+<img src="image.jpg" alt="Centered Image" class="centered-image">
+```
+
+style
+.centered-image {
+  display: block;
+  margin: 0 auto;
+}
+
+This will center the image horizontally. If you want to center it vertically as well, you can use:
+
+CSS:
+
+```
+.centered-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+```
+
+This will center the image both horizontally and vertically.
+
+Alternatively, you can use flexbox to center the image:
+
+HTML:
+
+```
+<div class="centered-image-container">
+  <img src="image.jpg" alt="Centered Image">
+</div>
+```
+
+CSS:
+
+```
+.centered-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* optional */
+}
+```
+
+This will center the image both horizontally and vertically within the container.
+```
+
+This code uses flexbox to center the table horizontally on the page. The `justify-content: center` property centers the table along the main axis (horizontally in this case).
+
+You can also add `align-items: center` to center the table vertically:
+
+```
+```
+
+This code sets the `height` of the `body` element to `100vh` (100% of the viewport height) and uses `align-items: center` to center the table vertically.
+
+Add this code to  HTML file, and the table should appear centered on the web page.
